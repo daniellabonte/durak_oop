@@ -1,0 +1,9 @@
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardImages\bin\Debug\CardImages.dll
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardImages\bin\Debug\CardImages.pdb
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardImages\bin\Debug\CardsLibrary.dll
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardImages\bin\Debug\CardsLibrary.pdb
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardImages\obj\Debug\CardImages.csprojResolveAssemblyReference.cache
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardImages\obj\Debug\CardImages.CardImage.resources
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardImages\obj\Debug\CardImages.csproj.GenerateResource.Cache
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardImages\obj\Debug\CardImages.dll
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardImages\obj\Debug\CardImages.pdb
