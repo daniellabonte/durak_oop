@@ -58,11 +58,11 @@ namespace CardImages
                     myCard.FaceUp = value;
 
                     UpdateCardImage();
-                    //if there is an event handler
-                    if (CardFlipped != null)
-                    {
-                        CardFlipped(this, new EventArgs()); //call it
-                    }
+                    ////if there is an event handler
+                    //if (CardFlipped != null)
+                    //{
+                    //    CardFlipped(this, new EventArgs()); //call it
+                    //}
                 }
             }
             get { return Card.FaceUp; }
@@ -90,13 +90,13 @@ namespace CardImages
         public void UpdateCardImage()
         {
             //SETS IMG  
-            pictureBox1.Image = myCard.GetCardImage();
+            pbMyPictureBox.Image = myCard.GetCardImage();
 
             //if orientation is horizontal
             if (myOrientation == Orientation.Horizontal)
             {
                 //rotate img
-                pictureBox1.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+                pbMyPictureBox.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
             }
         }
 
@@ -127,12 +127,12 @@ namespace CardImages
         }
 
         //dele that event is linked to
-        new public event EventHandler CardClicked;
-        public event EventHandler CardFlipped;
+        public event EventHandler CardClicked;
+       // public event EventHandler CardFlipped;
 
         private void pbMyPictureBox_Click(object sender, EventArgs e)
         {
-            OnCardClicked(EventArgs.Empty); // Raise card clicked event
+            
         }
 
         #endregion
@@ -150,8 +150,12 @@ namespace CardImages
                 CardClicked(this, e);
         }
 
+
         #endregion
 
-
+        private void pbMyPictureBox_Click_1(object sender, EventArgs e)
+        {
+            OnCardClicked(EventArgs.Empty); // Raise card clicked event
+        }
     }
 }

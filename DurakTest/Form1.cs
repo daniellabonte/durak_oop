@@ -13,13 +13,20 @@ namespace DurakTest
 {
     public partial class frmDurakGame : Form
     {
+        GameClass newGame = new GameClass();
         public frmDurakGame()
         {
             InitializeComponent();
         }
         private void CardClicked(object sender, EventArgs e)
         {
-            lblDeckSize.Text = "clicked";
+            PlayingCard clickedCard = (sender as CardImages.CardImage).Card;
+            CardImages.CardImage myCard = new CardImages.CardImage();
+            myCard.Card = clickedCard;
+            fplRiver.Controls.Add(myCard);
+            //TO-DO: REMOVE THE CARD FROM THE PLAYERS HAND.
+            
+            UpdateHand();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -32,19 +39,14 @@ namespace DurakTest
             this.PlayerCard5.Card = theCard;
             this.PlayerCard6.Card = theCard;
 
-            GameClass newGame = new GameClass();
+            
 
             lblDeckSize.Text = newGame.myGameDeck.deckSize();
 
             cbTrump.Card = newGame.myGameDeck.GetTrumpCard();
 
-            foreach (PlayingCard Card in newGame.myGamePlayer.myhand)
-            {
-                CardImages.CardImage myCard = new CardImages.CardImage();
-                myCard.Card = Card;
-                flpPlayerHand.Controls.Add(myCard);
-                myCard.CardClicked += new EventHandler(CardClicked);
-            }
+            UpdateHand();
+
 
 
         }
@@ -56,9 +58,17 @@ namespace DurakTest
 
         public void UpdateHand()
         {
+            flpPlayerHand.Controls.Clear();//TO-DO:NEEDS TO CLEAR THE FLPPLAYERHAND
             // player cards
-            
-            
+            foreach (PlayingCard Card in newGame.myGamePlayer.myhand)
+            {
+                
+                CardImages.CardImage myCard = new CardImages.CardImage();
+                myCard.Card = Card;
+                flpPlayerHand.Controls.Add(myCard);
+                myCard.CardClicked += new EventHandler(CardClicked);
+            }
+
         }
         
     }

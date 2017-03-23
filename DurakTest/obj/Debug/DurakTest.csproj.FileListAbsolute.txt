@@ -11,9 +11,6 @@ C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\DurakTe
 C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\DurakTest\obj\Debug\DurakTest.exe
 C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\DurakTest\obj\Debug\DurakTest.pdb
 C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\DurakTest\obj\Debug\DurakTest.frmDurakGame.resources
-C:\Users\Daniel\Google Drive\School\OOP\DurakFinal\DurakTester\DurakTest\bin\Debug\DurakTest.exe.config
-C:\Users\Daniel\Google Drive\School\OOP\DurakFinal\DurakTester\DurakTest\obj\Debug\DurakTest.exe
-C:\Users\Daniel\Google Drive\School\OOP\DurakFinal\DurakTester\DurakTest\obj\Debug\DurakTest.pdb
 C:\Users\Daniel\Google Drive\School\OOP\DurakFinal\DurakTest\bin\Debug\DurakTest.exe.config
 C:\Users\Daniel\Google Drive\School\OOP\DurakFinal\DurakTest\obj\Debug\DurakTest.exe
 C:\Users\Daniel\Google Drive\School\OOP\DurakFinal\DurakTest\obj\Debug\DurakTest.pdb
