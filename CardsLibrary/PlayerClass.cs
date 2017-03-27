@@ -8,38 +8,25 @@ namespace CardsLibrary
 {
     public class PlayerClass
     {
-        private string myPlayerName;
 
         //player hand
-        public List<PlayingCard> myhand = new List<PlayingCard> { };
-
+        private List<PlayingCard> myhand = new List<PlayingCard> { };
+        public List<PlayingCard> hand
+        {
+            get
+            {
+                return myhand;
+            }
+            set
+            {
+                myhand = value;
+            }
+        }
         //hand size
         private int myhandSize;
 
         //mutators
 
-        public string playerName
-        {
-            get
-            {
-                return myPlayerName;
-            }
-            set
-            {
-                //makes sure txt is alphanumeric 
-                if (value.All(char.IsLetterOrDigit))
-                {
-                    myPlayerName = value;
-                }
-                else
-                {
-                    //throws an exception
-                    throw (new ArgumentOutOfRangeException("value", value,
-                    String.Format("Name cannot be {0}. It must only contain alphanumeric characters.", value)));
-                }
-            }
-
-        }
         public int handSize
         {
             get
@@ -62,7 +49,8 @@ namespace CardsLibrary
         }
         public PlayerClass()
         {
-            
+            myhand = null;
+            handSize = 0;
         }
 
 

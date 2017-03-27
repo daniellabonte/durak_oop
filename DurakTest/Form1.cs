@@ -20,34 +20,31 @@ namespace DurakTest
         }
         private void CardClicked(object sender, EventArgs e)
         {
-            PlayingCard clickedCard = (sender as CardImages.CardImage).Card;
-            CardImages.CardImage myCard = new CardImages.CardImage();
-            myCard.Card = clickedCard;
-            fplRiver.Controls.Add(myCard);
-            //TO-DO: REMOVE THE CARD FROM THE PLAYERS HAND.
-            
-            UpdateHand();
+
+            //Check if the Card is a valid card to play depending on the river
+
+                //sets the creates a new card which will be added into the river
+                PlayingCard clickedCard = (sender as CardImages.CardImage).Card;
+                CardImages.CardImage myCard = new CardImages.CardImage();   //creates the card box
+                myCard.Card = clickedCard;//sets the cardboxcard to the card created from the click
+                fplRiver.Controls.Add(myCard);//add the card to the river
+
+
+                //finds the card from the players hand
+                PlayingCard cardRemoved = newGame.myGamePlayer.hand.Single(x => x.Rank == clickedCard.Rank && x.Suit == clickedCard.Suit);
+                //removes the card from the players hand
+                newGame.myGamePlayer.hand.Remove(cardRemoved);
+                //updates the players hand
+                UpdateHand();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            PlayingCard theCard = new CardsLibrary.PlayingCard(CardRank.Joker, CardSuit.clubs);
-            this.PlayerCard1.Card = theCard;
-            this.PlayerCard2.Card = theCard;
-            this.PlayerCard3.Card = theCard;
-            this.PlayerCard4.Card = theCard;
-            this.PlayerCard5.Card = theCard;
-            this.PlayerCard6.Card = theCard;
-
-            
-
+            //sets the deck size label
             lblDeckSize.Text = newGame.myGameDeck.deckSize();
-
+            //sets the trump card
             cbTrump.Card = newGame.myGameDeck.GetTrumpCard();
-
+            //updates the cards on the gui
             UpdateHand();
-
-
 
         }
 
@@ -58,18 +55,34 @@ namespace DurakTest
 
         public void UpdateHand()
         {
-            flpPlayerHand.Controls.Clear();//TO-DO:NEEDS TO CLEAR THE FLPPLAYERHAND
+
+            //River Cards 
+            //updates the rivers cards played
+
+
+            //clears the two flp containers
+            flpPlayerHand.Controls.Clear();
+            flpAIPlayer.Controls.Clear();
+           
+            
             // player cards
-            foreach (PlayingCard Card in newGame.myGamePlayer.myhand)
+            foreach (PlayingCard Card in newGame.myGamePlayer.hand)
             {
-                
                 CardImages.CardImage myCard = new CardImages.CardImage();
                 myCard.Card = Card;
                 flpPlayerHand.Controls.Add(myCard);
                 myCard.CardClicked += new EventHandler(CardClicked);
             }
 
+            //AI Player cards
+            foreach (PlayingCard Card in newGame.myAIPlayer.hand)
+            {
+                CardImages.CardImage myCard = new CardImages.CardImage();
+                myCard.Card = Card;
+                flpAIPlayer.Controls.Add(myCard);
+                myCard.CardClicked += new EventHandler(CardClicked);
+            }
+
         }
-        
     }
 }

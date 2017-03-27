@@ -32,17 +32,12 @@
             this.lblTrump = new System.Windows.Forms.Label();
             this.lblDeckSizelbl = new System.Windows.Forms.Label();
             this.lblDeckSize = new System.Windows.Forms.Label();
-            this.pnlAIPlayer = new System.Windows.Forms.Panel();
             this.flpPlayerHand = new System.Windows.Forms.FlowLayoutPanel();
             this.fplRiver = new System.Windows.Forms.FlowLayoutPanel();
-            this.PlayerCard2 = new CardImages.CardImage();
-            this.PlayerCard4 = new CardImages.CardImage();
-            this.PlayerCard1 = new CardImages.CardImage();
-            this.PlayerCard6 = new CardImages.CardImage();
-            this.PlayerCard3 = new CardImages.CardImage();
-            this.PlayerCard5 = new CardImages.CardImage();
+            this.flpAIPlayer = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblPlayerState = new System.Windows.Forms.Label();
             this.cbTrump = new CardImages.CardImage();
-            this.pnlAIPlayer.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExit
@@ -86,19 +81,6 @@
             this.lblDeckSize.TabIndex = 17;
             this.lblDeckSize.Text = "0";
             // 
-            // pnlAIPlayer
-            // 
-            this.pnlAIPlayer.Controls.Add(this.PlayerCard2);
-            this.pnlAIPlayer.Controls.Add(this.PlayerCard4);
-            this.pnlAIPlayer.Controls.Add(this.PlayerCard1);
-            this.pnlAIPlayer.Controls.Add(this.PlayerCard6);
-            this.pnlAIPlayer.Controls.Add(this.PlayerCard3);
-            this.pnlAIPlayer.Controls.Add(this.PlayerCard5);
-            this.pnlAIPlayer.Location = new System.Drawing.Point(26, 12);
-            this.pnlAIPlayer.Name = "pnlAIPlayer";
-            this.pnlAIPlayer.Size = new System.Drawing.Size(684, 132);
-            this.pnlAIPlayer.TabIndex = 19;
-            // 
             // flpPlayerHand
             // 
             this.flpPlayerHand.Location = new System.Drawing.Point(26, 453);
@@ -113,71 +95,32 @@
             this.fplRiver.Size = new System.Drawing.Size(675, 175);
             this.fplRiver.TabIndex = 21;
             // 
-            // PlayerCard2
+            // flpAIPlayer
             // 
-            this.PlayerCard2.CardOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.PlayerCard2.FaceUp = false;
-            this.PlayerCard2.Location = new System.Drawing.Point(122, 14);
-            this.PlayerCard2.Name = "PlayerCard2";
-            this.PlayerCard2.Rank = CardsLibrary.CardRank.Ace;
-            this.PlayerCard2.Size = new System.Drawing.Size(75, 105);
-            this.PlayerCard2.Suit = CardsLibrary.CardSuit.hearts;
-            this.PlayerCard2.TabIndex = 1;
+            this.flpAIPlayer.Location = new System.Drawing.Point(26, 12);
+            this.flpAIPlayer.Name = "flpAIPlayer";
+            this.flpAIPlayer.Size = new System.Drawing.Size(675, 175);
+            this.flpAIPlayer.TabIndex = 22;
             // 
-            // PlayerCard4
+            // button1
             // 
-            this.PlayerCard4.CardOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.PlayerCard4.FaceUp = false;
-            this.PlayerCard4.Location = new System.Drawing.Point(317, 14);
-            this.PlayerCard4.Name = "PlayerCard4";
-            this.PlayerCard4.Rank = CardsLibrary.CardRank.Ace;
-            this.PlayerCard4.Size = new System.Drawing.Size(75, 105);
-            this.PlayerCard4.Suit = CardsLibrary.CardSuit.hearts;
-            this.PlayerCard4.TabIndex = 3;
+            this.button1.Location = new System.Drawing.Point(707, 558);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 50);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Defeat";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // PlayerCard1
+            // lblPlayerState
             // 
-            this.PlayerCard1.CardOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.PlayerCard1.FaceUp = false;
-            this.PlayerCard1.Location = new System.Drawing.Point(29, 14);
-            this.PlayerCard1.Name = "PlayerCard1";
-            this.PlayerCard1.Rank = CardsLibrary.CardRank.Ace;
-            this.PlayerCard1.Size = new System.Drawing.Size(75, 105);
-            this.PlayerCard1.Suit = CardsLibrary.CardSuit.hearts;
-            this.PlayerCard1.TabIndex = 0;
-            // 
-            // PlayerCard6
-            // 
-            this.PlayerCard6.CardOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.PlayerCard6.FaceUp = false;
-            this.PlayerCard6.Location = new System.Drawing.Point(517, 14);
-            this.PlayerCard6.Name = "PlayerCard6";
-            this.PlayerCard6.Rank = CardsLibrary.CardRank.Ace;
-            this.PlayerCard6.Size = new System.Drawing.Size(75, 105);
-            this.PlayerCard6.Suit = CardsLibrary.CardSuit.hearts;
-            this.PlayerCard6.TabIndex = 5;
-            // 
-            // PlayerCard3
-            // 
-            this.PlayerCard3.CardOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.PlayerCard3.FaceUp = false;
-            this.PlayerCard3.Location = new System.Drawing.Point(225, 14);
-            this.PlayerCard3.Name = "PlayerCard3";
-            this.PlayerCard3.Rank = CardsLibrary.CardRank.Ace;
-            this.PlayerCard3.Size = new System.Drawing.Size(75, 105);
-            this.PlayerCard3.Suit = CardsLibrary.CardSuit.hearts;
-            this.PlayerCard3.TabIndex = 2;
-            // 
-            // PlayerCard5
-            // 
-            this.PlayerCard5.CardOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.PlayerCard5.FaceUp = false;
-            this.PlayerCard5.Location = new System.Drawing.Point(413, 14);
-            this.PlayerCard5.Name = "PlayerCard5";
-            this.PlayerCard5.Rank = CardsLibrary.CardRank.Ace;
-            this.PlayerCard5.Size = new System.Drawing.Size(75, 105);
-            this.PlayerCard5.Suit = CardsLibrary.CardSuit.hearts;
-            this.PlayerCard5.TabIndex = 4;
+            this.lblPlayerState.AutoSize = true;
+            this.lblPlayerState.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblPlayerState.Location = new System.Drawing.Point(21, 424);
+            this.lblPlayerState.Name = "lblPlayerState";
+            this.lblPlayerState.Size = new System.Drawing.Size(110, 25);
+            this.lblPlayerState.TabIndex = 24;
+            this.lblPlayerState.Text = "Defending";
             // 
             // cbTrump
             // 
@@ -196,9 +139,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(983, 620);
+            this.Controls.Add(this.lblPlayerState);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.flpAIPlayer);
             this.Controls.Add(this.fplRiver);
             this.Controls.Add(this.flpPlayerHand);
-            this.Controls.Add(this.pnlAIPlayer);
             this.Controls.Add(this.lblDeckSize);
             this.Controls.Add(this.lblDeckSizelbl);
             this.Controls.Add(this.lblTrump);
@@ -207,28 +152,22 @@
             this.Name = "frmDurakGame";
             this.Text = "Durak";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.pnlAIPlayer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private CardImages.CardImage PlayerCard1;
-        private CardImages.CardImage PlayerCard2;
-        private CardImages.CardImage PlayerCard3;
-        private CardImages.CardImage PlayerCard4;
-        private CardImages.CardImage PlayerCard5;
-        private CardImages.CardImage PlayerCard6;
         private System.Windows.Forms.Button btnExit;
         private CardImages.CardImage cbTrump;
         private System.Windows.Forms.Label lblTrump;
         private System.Windows.Forms.Label lblDeckSizelbl;
         private System.Windows.Forms.Label lblDeckSize;
-        private System.Windows.Forms.Panel pnlAIPlayer;
         private System.Windows.Forms.FlowLayoutPanel flpPlayerHand;
         private System.Windows.Forms.FlowLayoutPanel fplRiver;
+        private System.Windows.Forms.FlowLayoutPanel flpAIPlayer;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblPlayerState;
     }
 }
 

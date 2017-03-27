@@ -16,6 +16,8 @@ namespace CardsLibrary
         //Players (holds the players currently playing)
         public PlayerClass myGamePlayer = new PlayerClass();
 
+        public PlayerClass myAIPlayer = new PlayerClass();
+
         //trumpCard
         private PlayingCard myTrumpCard;
 
@@ -29,48 +31,42 @@ namespace CardsLibrary
         {
             myGameDeck.SetDeck();                       //sets the deck
             myTrumpCard = myGameDeck.GetTrumpCard();    //sets the trump card
-                                                        //creates a players hand
-            List<PlayingCard> playerHand = new List<PlayingCard> { };
 
+
+            //creates a list used to initially set the players hands                                            
+            List<PlayingCard> playerHand = new List<PlayingCard> { };
+            //TESTING ADDING THE CARDS
             for(int i=0; i < 6;i++)
             {
                 playerHand.Add(myGameDeck.DrawNextCard());
             }
-            myGamePlayer.myhand = playerHand;
+
+            //sets the players hand based on the list created
+            myGamePlayer.hand = playerHand;
+            //CLEARING THE LIST TO BE USED FOR THE AI PLAYERS HAND
+
+            List<PlayingCard> aiplayerHand = new List<PlayingCard> { };
+
+
+            for (int i = 0; i < 6; i++)
+            {
+                aiplayerHand.Add(myGameDeck.DrawNextCard());
+            }
+            //sets the ai players hand
+            myAIPlayer.hand = aiplayerHand;
 
             //call the main game logic
-    }
+        }
 
         //Mutators
-
-        //Remove players
-        //public PlayingCard RemovePlayer(PlayingCard removingPlayer)
-        //{
-        //    //find the value of the player in the list
-
-        //}
-
-
-        //IsValidCard
-        //checks the currently played cards to ensure that the card 
-        //that the player selected can be played
-
 
         //draw cards which adds the amount of cards needed 
         //to ensure that the player has 6 cards ub there hand
 
 
+        //checks that the defender can player the card clicked
+        //checks that the attacker can play the card clicked
 
-        //main attack logic
-        //checks the cards can be played each time a card is placed(IsValidCard)
-        //checks who won
-
-        //if the attacker wins(i.e the defender cant play anything)
-        //move the river cards into the defenders hand
-
-        //else if the defender wins the round
-        //get rid of the cards in the river
-        //make the defender the new attacker
 
     }
 }
