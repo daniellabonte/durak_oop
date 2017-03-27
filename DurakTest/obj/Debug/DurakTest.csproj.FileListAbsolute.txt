@@ -14,3 +14,16 @@ C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\DurakTe
 C:\Users\Daniel\Google Drive\School\OOP\DurakFinal\DurakTest\bin\Debug\DurakTest.exe.config
 C:\Users\Daniel\Google Drive\School\OOP\DurakFinal\DurakTest\obj\Debug\DurakTest.exe
 C:\Users\Daniel\Google Drive\School\OOP\DurakFinal\DurakTest\obj\Debug\DurakTest.pdb
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\bin\Debug\DurakTest.exe.config
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\obj\Debug\DurakTest.exe
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\obj\Debug\DurakTest.pdb
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\bin\Debug\DurakTest.exe
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\bin\Debug\DurakTest.pdb
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\bin\Debug\CardImages.dll
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\bin\Debug\CardsLibrary.dll
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\bin\Debug\CardImages.pdb
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\bin\Debug\CardsLibrary.pdb
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\obj\Debug\DurakTest.csprojResolveAssemblyReference.cache
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\obj\Debug\DurakTest.frmDurakGame.resources
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\obj\Debug\DurakTest.Properties.Resources.resources
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\DurakTest\obj\Debug\DurakTest.csproj.GenerateResource.Cache

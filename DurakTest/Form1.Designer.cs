@@ -110,6 +110,7 @@
             this.button1.TabIndex = 23;
             this.button1.Text = "Defeat";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblPlayerState
             // 
@@ -149,7 +150,11 @@
             this.Controls.Add(this.lblTrump);
             this.Controls.Add(this.cbTrump);
             this.Controls.Add(this.btnExit);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "frmDurakGame";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Durak";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

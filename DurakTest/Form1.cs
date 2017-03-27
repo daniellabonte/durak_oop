@@ -27,13 +27,15 @@ namespace DurakTest
                 PlayingCard clickedCard = (sender as CardImages.CardImage).Card;
                 CardImages.CardImage myCard = new CardImages.CardImage();   //creates the card box
                 myCard.Card = clickedCard;//sets the cardboxcard to the card created from the click
-                fplRiver.Controls.Add(myCard);//add the card to the river
+                //fplRiver.Controls.Add(myCard);//add the card to the river
 
 
                 //finds the card from the players hand
                 PlayingCard cardRemoved = newGame.myGamePlayer.hand.Single(x => x.Rank == clickedCard.Rank && x.Suit == clickedCard.Suit);
                 //removes the card from the players hand
                 newGame.myGamePlayer.hand.Remove(cardRemoved);
+                //adds the card to the river
+                newGame.myGameRiver.hand.Add(cardRemoved);
                 //updates the players hand
                 UpdateHand();
         }
@@ -56,14 +58,23 @@ namespace DurakTest
         public void UpdateHand()
         {
 
-            //River Cards 
-            //updates the rivers cards played
-
-
             //clears the two flp containers
             flpPlayerHand.Controls.Clear();
             flpAIPlayer.Controls.Clear();
-           
+            fplRiver.Controls.Clear();
+
+            //River Cards 
+            //updates the rivers cards played
+            if (newGame.myGameRiver.hand != null)
+            {
+                foreach (PlayingCard Card in newGame.myGameRiver.hand)
+                {
+                    CardImages.CardImage myCard = new CardImages.CardImage();
+                    myCard.Card = Card;
+                    fplRiver.Controls.Add(myCard);
+                }
+            }
+
             
             // player cards
             foreach (PlayingCard Card in newGame.myGamePlayer.hand)
@@ -80,9 +91,21 @@ namespace DurakTest
                 CardImages.CardImage myCard = new CardImages.CardImage();
                 myCard.Card = Card;
                 flpAIPlayer.Controls.Add(myCard);
-                myCard.CardClicked += new EventHandler(CardClicked);
             }
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //add the cards from the river to the players hand.
+            foreach (PlayingCard Card in newGame.myGameRiver.hand)
+            {
+                
+                newGame.myGamePlayer.hand.Add(Card);
+                
+            }
+            newGame.myGameRiver.hand.Clear();
+            UpdateHand();
         }
     }
 }
