@@ -27,7 +27,7 @@ namespace DurakTest
                 PlayingCard clickedCard = (sender as CardImages.CardImage).Card;
                 CardImages.CardImage myCard = new CardImages.CardImage();   //creates the card box
                 myCard.Card = clickedCard;//sets the cardboxcard to the card created from the click
-                //fplRiver.Controls.Add(myCard);//add the card to the river
+                
 
 
                 //finds the card from the players hand

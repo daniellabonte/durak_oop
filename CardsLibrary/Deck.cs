@@ -15,7 +15,6 @@ namespace CardsLibrary
         Medium = 36,
         Large = 52
     }
-
     public class Deck
     {
         /// <summary>
@@ -114,7 +113,8 @@ namespace CardsLibrary
                 assigned[sourceCard] = true;
                 newDeck.Add(myDeck[sourceCard]);
             }
-            newDeck.CopyTo(myDeck.Cast<PlayingCard>().ToArray());
+            //newDeck.CopyTo(myDeck.Cast<PlayingCard>().ToArray());
+            myDeck = newDeck;
         }
 
         public PlayingCard DrawNextCard()
