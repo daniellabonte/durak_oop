@@ -5,3 +5,10 @@ C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardsLi
 C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardsLibrary\obj\Debug\CardsLibrary.csproj.GenerateResource.Cache
 C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardsLibrary\obj\Debug\CardsLibrary.dll
 C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\DurakTester\CardsLibrary\obj\Debug\CardsLibrary.pdb
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\CardsLibrary\bin\Debug\CardsLibrary.dll
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\CardsLibrary\bin\Debug\CardsLibrary.pdb
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\CardsLibrary\obj\Debug\CardsLibrary.csprojResolveAssemblyReference.cache
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\CardsLibrary\obj\Debug\CardsLibrary.Properties.Resources.resources
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\CardsLibrary\obj\Debug\CardsLibrary.csproj.GenerateResource.Cache
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\CardsLibrary\obj\Debug\CardsLibrary.dll
+C:\Users\joey\Documents\Durham College\Year 2\Semester2\OOP3\Durak_git\CardsLibrary\obj\Debug\CardsLibrary.pdb

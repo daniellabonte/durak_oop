@@ -13,6 +13,9 @@ namespace CardsLibrary
         //deck (holds the playing card deck)
         public Deck myGameDeck = new Deck();
 
+        //River 
+        public River myGameRiver = new River();
+
         //Players (holds the players currently playing)
         public PlayerClass myGamePlayer = new PlayerClass();
 
@@ -23,7 +26,7 @@ namespace CardsLibrary
 
 
         //river (attack/defend cards in the pile)
-        public List<PlayingCard> myGameRiver = new List<PlayingCard> { };
+        //public List<PlayingCard> myGameRiver = new List<PlayingCard> { };
 
 
         //CONSTRUCTOR
@@ -31,7 +34,7 @@ namespace CardsLibrary
         {
             myGameDeck.SetDeck();                       //sets the deck
             myTrumpCard = myGameDeck.GetTrumpCard();    //sets the trump card
-
+            
 
             //creates a list used to initially set the players hands                                            
             List<PlayingCard> playerHand = new List<PlayingCard> { };
@@ -57,6 +60,7 @@ namespace CardsLibrary
 
             //call the main game logic
         }
+
 
         //Mutators
 

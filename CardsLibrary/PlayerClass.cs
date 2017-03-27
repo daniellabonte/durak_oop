@@ -49,7 +49,7 @@ namespace CardsLibrary
         }
         public PlayerClass()
         {
-            myhand = null;
+            myhand = new List<PlayingCard>();
             handSize = 0;
         }
 
